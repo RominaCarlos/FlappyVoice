@@ -12,11 +12,14 @@ Spielmechanismus
 --------------
 Der Spielcharakter kann sich durch 7 Poisition Vertikal bewegen, welche mit 7 Tasten betätigt wird.
 
-x... Punkt, indem sich der Spieler befinden kann
-|... Unerreichbarer Punkt, nur zur verstädlichkeit da
-C... Spieler
-<... Hindernis
-d... Tot
+<pre>
+
+x... Punkt, indem sich der Spieler befinden kann  
+|... Unerreichbarer Punkt, nur zur verstädlichkeit da  
+C... Spieler  
+<... Hindernis  
+d... Tot  
+
 
 7 x   
   |   
@@ -64,3 +67,4 @@ kollidiert, welche mit d markiert wird. Nach dem Tod wird der Spieler gefragt, o
 2 <	x
   |	|
 1 <	x
+</pre>

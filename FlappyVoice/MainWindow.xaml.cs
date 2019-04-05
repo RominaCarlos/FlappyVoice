@@ -23,6 +23,7 @@ namespace FlappyVoice
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

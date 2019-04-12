@@ -1,0 +1,15 @@
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\bin\Debug\FlappyBirdAttempt.exe.config
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\bin\Debug\FlappyBirdAttempt.exe
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\bin\Debug\FlappyBirdAttempt.pdb
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.csprojResolveAssemblyReference.cache
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\MainWindow.g.cs
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\App.g.cs
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt_MarkupCompile.cache
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt_MarkupCompile.lref
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\MainWindow.baml
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.g.resources
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.Properties.Resources.resources
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.csproj.GenerateResource.cache
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.csproj.CoreCompileInputs.cache
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.exe
+C:\Users\romin\source\repos\FlappyBirdAttempt\FlappyBirdAttempt\obj\Debug\FlappyBirdAttempt.pdb

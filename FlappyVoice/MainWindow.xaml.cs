@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace FlappyVoice
 {
     /// <summary>
@@ -20,9 +21,36 @@ namespace FlappyVoice
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
-            InitializeComponent();
+           
+
+
+
+            Rectangle rec = new Rectangle()
+            {
+                Fill = Brushes.Red
+                
+            };
+
+            Grid.SetRow(rec, 2);
+            Grid.SetColumn(rec, 1);
+            Keyboard.IsKeyDown();
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                MessageBox.Show("Enter Key Pressed ");
+            }
+
+
+
+
+
+
+
+
         }
     }
 }

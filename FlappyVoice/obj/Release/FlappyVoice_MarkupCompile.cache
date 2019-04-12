@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\
+C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Release\
 FlappyVoice
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\App.xaml
 11151548125
 

@@ -25,6 +25,7 @@ namespace FlappyVoice
 
         public MainWindow()
         {
+<<<<<<< HEAD
            
 
 
@@ -50,6 +51,9 @@ namespace FlappyVoice
 
 
 
+=======
+            InitializeComponent();
+>>>>>>> 7d3db8c80d6cb981410f191a4f5b62a0723230ae
 
         }
     }

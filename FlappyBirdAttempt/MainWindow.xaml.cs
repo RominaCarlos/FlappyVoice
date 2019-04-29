@@ -15,12 +15,22 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.Drawing;
 
-
-
-
-
 namespace FlappyBirdAttempt
 {
+    class PlayerMovement
+    {
+        public Ellipse playerObj { get; set; }
+
+        internal void MovePlayerObj()
+        {
+            //switch ( )
+            //{
+            //    case 
+            //}
+        }
+
+    }
+
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
@@ -70,6 +80,14 @@ namespace FlappyBirdAttempt
                     this.Close();
                 }
                 
+            }
+        }
+
+        private void Grid_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                MessageBox.Show("Du hast die Taste 0 betätigt");
             }
         }
     }

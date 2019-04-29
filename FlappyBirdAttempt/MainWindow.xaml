@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800" KeyDown="Timer_Start"
         >
 
-    <Grid>
+    <Grid KeyDown="Grid_KeyDown">
         <Ellipse
             x:Name="ball"
             Fill="Red"

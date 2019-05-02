@@ -10,7 +10,15 @@
         >
     
 
+<<<<<<< HEAD
     <Grid>
+=======
+    <Grid KeyDown="Grid_KeyDown">
+        <Ellipse
+            x:Name="ball"
+            Fill="Red"
+            Margin="65,68,679.333,303.667"/>
+>>>>>>> 27dd15c739bcfb88fee7473a54352ee2c330a8e6
         <Label Name="dt" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <Label x:Name="timer" Content="0" HorizontalAlignment="Left" Margin="609,27,0,0" VerticalAlignment="Top" FontSize="30"/>
         

@@ -56,8 +56,9 @@ namespace FlappyBirdAttempt
                 dt.Tick += dtTicker;
                 dt.Start();
 
+                Obstacles createObstacles = new Obstacles();
 
-
+                createObstacles.CreateObstacles(true);
 
             }
 

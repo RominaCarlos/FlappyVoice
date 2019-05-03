@@ -65,10 +65,6 @@ namespace FlappyBirdAttempt
                 dt.Interval = TimeSpan.FromSeconds(1);
                 dt.Tick += dtTicker;
                 dt.Start();
-
-
-
-
             }
 
             //beenden des spiels
@@ -83,12 +79,14 @@ namespace FlappyBirdAttempt
             }
         }
 
-        private void Grid_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.Key == Key.Enter)
+        if(e.Key == Key.Enter)
             {
-                MessageBox.Show("Du hast die Taste 0 betätigt");
+                MessageBox.Show("Du hast die Taste 0 betätigt","lol");
             }
+
+    private void Grid_KeyDown(object sender, KeyEventArgs e)
+        {
+            
         }
     }
 }

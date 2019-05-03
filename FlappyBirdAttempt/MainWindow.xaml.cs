@@ -65,6 +65,14 @@ namespace FlappyBirdAttempt
                 dt.Interval = TimeSpan.FromSeconds(1);
                 dt.Tick += dtTicker;
                 dt.Start();
+<<<<<<< HEAD
+=======
+
+                Obstacles createObstacles = new Obstacles();
+
+                createObstacles.CreateObstacles(true);
+
+>>>>>>> 9f7cd0b9737b2551b36851151786fea2c487bdfa
             }
 
             //beenden des spiels

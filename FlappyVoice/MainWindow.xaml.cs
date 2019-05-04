@@ -21,14 +21,8 @@ namespace FlappyVoice
     /// </summary>
     public partial class MainWindow : Window
     {
-
-
         public MainWindow()
         {
-<<<<<<< HEAD
-           
-
-
 
             Rectangle rec = new Rectangle()
             {
@@ -36,6 +30,7 @@ namespace FlappyVoice
                 
             };
 
+            /*
             Grid.SetRow(rec, 2);
             Grid.SetColumn(rec, 1);
             Keyboard.IsKeyDown();
@@ -44,16 +39,9 @@ namespace FlappyVoice
             {
                 MessageBox.Show("Enter Key Pressed ");
             }
-
-
-
-
-
-
-
-=======
+            */
             InitializeComponent();
->>>>>>> 7d3db8c80d6cb981410f191a4f5b62a0723230ae
+
 
         }
     }

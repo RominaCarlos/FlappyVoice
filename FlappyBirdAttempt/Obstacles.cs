@@ -23,12 +23,13 @@ namespace FlappyBirdAttempt
         public int position;
         public int speed = 3;
 
+
         public void CreateObstacles(bool startgame)
         {
             if(startgame == true)
             {
                 Random r = new Random();
-                Rectangle rect1 = new Rectangle() { Fill = Brushes.Blue, Height = 50, Width = 20 };
+                Rectangle rect1 = new Rectangle() { Fill = Brushes.DarkGray, Height = 50, Width = 20 };
 
             }           
 

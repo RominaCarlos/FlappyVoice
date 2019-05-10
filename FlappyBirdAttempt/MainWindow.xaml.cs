@@ -91,5 +91,11 @@ namespace FlappyBirdAttempt
                 MessageBox.Show("Du hast die Taste 0 betätigt");
             }
         }
+
+        Random r = new Random();
+
+        List<Obstacles> obstactles = new List<Obstacles>();
+
+        
     }
 }

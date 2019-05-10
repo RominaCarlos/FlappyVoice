@@ -1,33 +1,17 @@
-<<<<<<< HEAD
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.exe.config
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.exe
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.pdb
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csprojResolveAssemblyReference.cache
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\MainWindow.g.cs
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\App.g.cs
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice_MarkupCompile.cache
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice_MarkupCompile.lref
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\MainWindow.baml
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.g.resources
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.Properties.Resources.resources
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csproj.GenerateResource.cache
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csproj.CoreCompileInputs.cache
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.exe
-C:\Users\romin\Documents\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.pdb
-=======
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.exe.config
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.exe
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\bin\Debug\FlappyVoice.pdb
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csprojAssemblyReference.cache
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\MainWindow.g.cs
+C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\StartWindow.g.cs
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\App.g.cs
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice_MarkupCompile.cache
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice_MarkupCompile.lref
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\MainWindow.baml
+C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\StartWindow.baml
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.g.resources
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.Properties.Resources.resources
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csproj.GenerateResource.cache
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.csproj.CoreCompileInputs.cache
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.exe
 C:\Users\anton\OneDrive\Documents\Schule\3BHIT\SEW\FlappyVoice\FlappyVoice\obj\Debug\FlappyVoice.pdb
->>>>>>> 7d3db8c80d6cb981410f191a4f5b62a0723230ae

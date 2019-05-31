@@ -9,9 +9,8 @@
     Title="FlappyVoice" Height="450" Width="800">
     
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        <Canvas Name="canvas_base" Background="DeepSkyBlue"></Canvas>
+        
 
     </Grid>
 </Window>

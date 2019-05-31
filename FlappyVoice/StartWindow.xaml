@@ -39,7 +39,7 @@
                 <TextBox Grid.Column="1" Name="txtInputName"/>
                 <Button Grid.Column="2" Content="V"/>
             </Grid>
-            
+
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
@@ -50,11 +50,13 @@
                 <Button Name="btnQuit" Content="Quit" Grid.Column="1" Click="BtnQuit_Click"/>
             </Grid>
 
-            <Label Grid.Row="0" Content="FlappyClone" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="0" Content="FlappyVoice" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <Button Name="btnPlay" Content="Play!" Grid.Row="2" Click="BtnPlay_Click"/>
         </Grid>
+        <Label Content="Top Player: " HorizontalAlignment="Left" Margin="72,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="HighestScore" Content="score" Grid.Column="1" HorizontalAlignment="Left" Margin="162,34.333,0,0" Grid.Row="2" VerticalAlignment="Top"/>
 
-        
+
 
     </Grid>
 

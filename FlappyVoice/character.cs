@@ -16,22 +16,9 @@ using System.Windows.Shapes;
 
 public class Character
 {
-    public event System.Windows.Forms.KeyPressEventHandler KeyPress;
-
-    
-
     public Character()
 	{
         
-
-        int force;
-        int gravity;
-        bool character_jump;
-
-        
-
-
-
 
     }
 }

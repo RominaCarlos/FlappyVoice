@@ -220,7 +220,7 @@ namespace FlappyVoice
 
         }
 
-        private void resetAll()
+        private void resetAll() 
         {
             counter = 0;
 

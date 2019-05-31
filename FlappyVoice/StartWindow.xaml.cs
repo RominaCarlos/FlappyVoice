@@ -22,24 +22,27 @@ namespace FlappyVoice
         public StartWindow()
         {
             InitializeComponent();
+            InfoList playerInfo = new InfoList();
+
         }
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-
-            if (String.IsNullOrEmpty(txtInputName.Text))
+            InfoList playerInfo = new InfoList();
+            if (string.IsNullOrEmpty(txtInputName.Text))
             {
                 MessageBox.Show("Bitte gib einen Namen ein oder wähle eines der gespeicherten");
 
             }
             else
             {
+                playerInfo.ReadInfoList(txtInputName.Text, 0, 0);
                 MainWindow mainWin = new MainWindow();
                 mainWin.Show();
                 Close();
-                
+
             }
-            
+
         }
 
         private void BtnQuit_Click(object sender, RoutedEventArgs e)

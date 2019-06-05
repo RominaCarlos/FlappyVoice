@@ -265,12 +265,271 @@ namespace FlappyVoice
 
             return r1R > r2L && r1L < r2R && r1B > r2T && r1T < r2B;
         }
-
-
-
-
-    
-
         }
     }
+
+/*
+namespace FlappyVoice
+{
+    /// <summary>
+    /// Interaktionslogik für MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+
+
+        Random r = new Random();
+
+        int straightCounter = 0;
+
+        double topScore = 0;    //Top Score des Spielers
+
+        bool spaceDown = false;  //Betätigung der Space-Taste
+        double obGapEnd = 60;
+
+        int[] xs = new int[30];
+        int[] ys = new int[30];
+
+        int mouseUpThreshold = 30;
+
+        double obWidth = 50.0;   //Obstacle Breite
+        double obGapBase = 200.0;    //Obstacle
+        double obSpeed = 4.0;   //Veränderung der Obstacle Größe
+        double partitions = 3.0;
+
+        double playerForward = 100.0;   //Position des Spielers
+        double playerSize = 10.0;   //Größe des Spielcharakters
+        double playerLift = 200.0;
+        double playerSpeed = 0.0;   //Geschwindigkeit, die der Spieler nach vorne springt
+
+        DispatcherTimer timer;   //Spieltimer (?)
+        int counter = 0;
+        int lastMouseCounter = 0;
+
+        List<Obstacles> obstacleList = new List<Obstacles>();
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            Loaded += MainWindowLoaded;
+        }
+
+        void timerTick(object sender, EventArgs e)
+        {
+            /*Diese Methode updated Daten, die pro Tick verändert werden´:
+             * Spieler Bewegung
+             * Score
+             * Obstacles
+
+straightCounter++;
+            counter++;
+            if ((counter - lastMouseCounter) > mouseUpThreshold)
+            {
+                counter += 5;
+            }
+            if (spaceDown)
+            {
+                counter -= 10;
+            }
+            if (counter > topScore)
+            {
+                topScore = counter;
+            }
+
+            canvasBase.Children.Clear();
+
+
+            //Start - Dieser Block kreiert Textblkc für aktuellen Score, Highscore und Name
+
+            TextBlock scores = new TextBlock(); //kreiirt ein Textblock für scores
+            if ((counter - lastMouseCounter) > mouseUpThreshold)
+            {
+                scores.FontWeight = FontWeights.Bold;
+            }
+
+
+            scores.Background = new SolidColorBrush(Colors.White);
+scores.Margin = new Thickness(5.0);
+scores.FontSize = 20.0;
+            scores.Text = "  " + counter.ToString() + "  ";
+
+            TextBlock topScoretext = new TextBlock(); //neuer Textblock für Highscore
+topScoretext.FontWeight = FontWeights.Bold;
+
+            topScoretext.Background = new SolidColorBrush(Colors.White);
+topScoretext.Margin = new Thickness(5, 35, 5, 5);
+topScoretext.FontSize = 20.0;
+            topScoretext.Text = "  " + topScore.ToString() + "  ";
+            if (topScore == counter)// && counter % 20 < 10
+                topScoretext.Text = "  " + topScore.ToString() + " ! ";
+
+            TextBlock playerName = new TextBlock();
+playerName.Text = "";
+
+            //End - Hier endet dieser Block
+
+            double height = canvasBase.ActualHeight;
+double width = canvasBase.ActualWidth;
+
+            if (!spaceDown || (spaceDown && counter <= 0))
+            {
+                playerSpeed += 0.3;
+                playerLift -= playerSpeed;
+            }
+
+            Rectangle gameCharacter = new Rectangle() //Spielcharakter
+            {
+                Width = playerSize,
+                Height = playerSize,
+                StrokeThickness = 2.0,
+                Fill = new SolidColorBrush(Colors.Yellow)
+            };
+
+gameCharacter.SetValue(Canvas.TopProperty, height - playerLift);
+            gameCharacter.SetValue(Canvas.LeftProperty, playerForward);
+
+            foreach (Obstacles ob in obstacleList) //Obstacles erstellen
+            {
+                double obGap = obGapBase * ob.left / canvasBase.ActualWidth + obGapEnd;
+double topHeight = (height - obGap) * Math.Pow(Math.Sin((ob.height + ob.neg * 2 * ob.left / canvasBase.ActualWidth)), 2.0);
+Color colors = ob.hit ? Colors.Red : Colors.Green;
+
+Rectangle obTop = new Rectangle() //obere Teil des Obstacles
+{
+    Width = obWidth,
+    Height = topHeight,
+    StrokeThickness = 2.0,
+    Fill = new SolidColorBrush(colors)
+};
+obTop.SetValue(Canvas.TopProperty, 0.0);
+                obTop.SetValue(Canvas.LeftProperty, ob.left);
+
+                Rectangle obBottom = new Rectangle()
+                {
+                    Width = obWidth,
+                    Height = height - topHeight - obGap,
+                    Fill = new SolidColorBrush(colors)
+                };
+obBottom.SetValue(Canvas.TopProperty, topHeight + obGap);
+                obBottom.SetValue(Canvas.LeftProperty, ob.left);
+
+                ob.visual_rect_top = obTop;
+                ob.visual_rect_bottom = obBottom;
+                canvasBase.Children.Add(obTop);
+                canvasBase.Children.Add(obBottom);
+
+                ob.left -= obSpeed;
+
+                if (ob.left + obWidth< 0.0)
+                {
+                    ob.left = width;
+                    ob.height = r.NextDouble();
+                    ob.neg = (r.Next() % 2) * 2 - 1;
+                    ob.hit = false;
+                }
+
+                //fügt zum GUI hinzu
+                canvasBase.Children.Add(scores);
+                canvasBase.Children.Add(topScoretext);
+                canvasBase.Children.Add(playerName);
+
+                if (counter > 30 || (counter< 30 && counter % 5 < 3))
+                {
+                    canvasBase.Children.Add(gameCharacter);
+                }
+
+                foreach (Obstacles obstacle in obstacleList)
+                {
+                    if (!obstacle.hit && collision(gameCharacter, obstacle.visual_rect_top)){
+                        MessageBox.Show("Game Over");
+                        obstacle.hit = true;
+                        resetAll();
+                        return;
+                    }
+                }
+            }
+        }
+        void MainWindowLoaded(object sencer, RoutedEventArgs e)
+{
+    for (int i = 0; i < 30; i++)
+    {
+        xs[i] = r.Next() % Convert.ToInt16(canvasBase.ActualWidth);
+        ys[i] = r.Next() % Convert.ToInt16(canvasBase.ActualHeight);
+    }
+
+    MouseDown += canvasBaseMouseDown;
+    KeyDown += MainWindowKeyDown;
+    KeyUp += MainWindowKeyUp;
+
+    timer = new DispatcherTimer() { Interval = TimeSpan.FromSeconds(0.02) };
+    timer.Tick += timerTick;
+    timer.Start();
+
+    resetAll();
+}
+
+void MainWindowKeyUp(object sender, KeyEventArgs e)
+{
+    if (e.Key == Key.Space)
+    {
+        spaceDown = false;
+    }
+}
+
+void MainWindowKeyDown(object sender, KeyEventArgs e)
+{
+    if (e.Key == Key.Space && counter > 100)
+    {
+        spaceDown = true;
+        playerSpeed = 0;
+        counter -= 100;
+    }
+}
+
+void resetAll()
+{
+    counter = 0;
+
+    obstacleList.Clear();
+    for (int i = 0; i < partitions; i++)
+    {
+        obstacleList.Add(new Obstacles() { height = r.NextDouble(), left = 500 + (canvasBase.ActualHeight + obWidth) * (i / partitions), neg = (r.Next() % 2) * 2 - 1 });
+    }
+
+    playerLift = 200.0;
+    playerSpeed = 0.0;
+}
+
+
+void canvasBaseMouseDown(object sender, MouseButtonEventArgs e)
+{
+    playerSpeed = -5;
+    lastMouseCounter = counter;
+}
+
+bool collision(Rectangle r1, Rectangle r2)
+{
+    double r1L = Convert.ToDouble(r1.GetValue(Canvas.LeftProperty));
+    double r1T = Convert.ToDouble(r1.GetValue(Canvas.LeftProperty));
+    double r1R = r1L + r1.Width;
+    double r1B = r1T + r1.Height;
+
+    double r2L = Convert.ToDouble(r1.GetValue(Canvas.LeftProperty));
+    double r2T = Convert.ToDouble(r1.GetValue(Canvas.LeftProperty));
+    double r2R = r2L + r2.Width;
+    double r2B = r2T + r2.Height;
+
+    if (r1T < 0)
+    {
+        return true;
+    }
+    if (r1B > canvasBase.ActualHeight)
+    {
+        return true;
+    }
+
+    return r1R > r2L && r1L < r2R && r1B > r2T && r1T < r2B;
+}
+    }
+ */
 

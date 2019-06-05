@@ -77,6 +77,7 @@ namespace FlappyVoice
 
 
             
+            //Start - Dieser Block kreiert Textblkc für aktuellen Score, Highscore und Name
 
             TextBlock scores = new TextBlock(); //kreiirt ein Textblock für scores
             if ((counter - lastmousecounter) > mouseupthreshold)
@@ -100,7 +101,11 @@ namespace FlappyVoice
             if (topScore == counter)// && counter % 20 < 10
                 topScoretext.Text = "  " + topScore.ToString() + " ! ";
 
+            TextBlock playerName = new TextBlock();
+            playerName.Text = "";
 
+            //End - Hier endet dieser Block
+            
             double height = canvas_base.ActualHeight;
             double width = canvas_base.ActualWidth;
 
@@ -165,6 +170,7 @@ namespace FlappyVoice
             //fügt zum GUI hinzu
             canvas_base.Children.Add(scores);
             canvas_base.Children.Add(topScoretext);
+            canvas_base.Children.Add(playerName);
 
             if (counter > 30 || (counter < 30 && counter % 5 < 3))
                 canvas_base.Children.Add(you);
@@ -174,7 +180,7 @@ namespace FlappyVoice
             {
                 if (!obstacle.hit && collision(you, obstacle.visual_rect_top) || collision(you, obstacle.visual_rect_bottom))
                 {
-                    
+                    MessageBox.Show("Game Over");
                     obstacle.hit = true;
                     resetAll();
                     return;

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="StartWindow" Height="450" Width="450
         ">
-    <Grid>
+    <Grid Background="#FFB1F1FF">
         <Grid.RowDefinitions>
             <RowDefinition x:Name="rSpacing1" Height="*"/>
             <RowDefinition x:Name="rSpacing2" Height="4*"/>
@@ -35,9 +35,9 @@
                     <ColumnDefinition x:Name="SavedNames" Width="0.3*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Name:" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBox Grid.Column="1" Name="txtInputName"/>
-                <Button Grid.Column="2" Content="V"/>
+                <Label Grid.Column="0" Content="Name:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.462,-1.083" Margin="0,12,2.333,28"/>
+                <TextBox Name="txtInputName" Grid.ColumnSpan="2" Height="37" Margin="55,10,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+                <Button Grid.Column="2" Content="v" Margin="0,12,24.333,34" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FF949494"/>
             </Grid>
 
             <Grid Grid.Row="3">
@@ -46,15 +46,15 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button Name="btnHighscores" Content="Button" Grid.Column="0"/>
-                <Button Name="btnQuit" Content="Quit" Grid.Column="1" Click="BtnQuit_Click"/>
+                <Button Name="btnHighscores" Content="Button" Grid.Column="0" Background="#FFAFEC76" BorderBrush="{x:Null}"/>
+                <Button Name="btnQuit" Content="Quit" Grid.Column="1" Click="BtnQuit_Click" Background="#FFF79898" BorderBrush="{x:Null}"/>
             </Grid>
 
-            <Label Grid.Row="0" Content="FlappyVoice" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Button Name="btnPlay" Content="Play!" Grid.Row="2" Click="BtnPlay_Click"/>
+            <Label Grid.Row="0" Content="FlappyVoice" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFB8E58"/>
+            <Button Name="btnPlay" Content="Play!" Grid.Row="2" Click="BtnPlay_Click" Background="#FFFFEA8B" BorderBrush="{x:Null}"/>
         </Grid>
-        <Label Content="Top Player: " HorizontalAlignment="Left" Margin="72,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label x:Name="HighestScore" Content="score" Grid.Column="1" HorizontalAlignment="Left" Margin="162,34.333,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Label Content="Top Player: " HorizontalAlignment="Left" Margin="72,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" FontSize="15"/>
+        <Label x:Name="HighestScore" Content="score" Grid.Column="1" HorizontalAlignment="Left" Margin="162,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="15"/>
 
 
 

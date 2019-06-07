@@ -26,35 +26,43 @@
                 <RowDefinition x:Name="NameInputSaved"/>
                 <RowDefinition x:Name="Play"/>
                 <RowDefinition x:Name="HighscoresQuit"/>
+                <RowDefinition x:Name="TopPlayerScore"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition x:Name="Name" Width="0.3*"/>
-                    <ColumnDefinition x:Name="Input" Width="*"/>
-                    <ColumnDefinition x:Name="SavedNames" Width="0.3*"/>
+                    <ColumnDefinition x:Name="InputSavedNames" Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Column="0" Content="Name:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.462,-1.083" Margin="0,12,2.333,28"/>
-                <TextBox Name="txtInputName" Grid.ColumnSpan="2" Height="37" Margin="55,10,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
-                <Button Grid.Column="2" Content="v" Margin="0,12,24.333,34" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FF949494"/>
+                <TextBox Name="txtInputName" Text="Name:"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"  BorderBrush="{x:Null}" Background="{x:Null}" FontSize="15"/>
+                <ComboBox Name="cboxNameSelection" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderBrush="{x:Null}" Background="{x:Null}" IsEditable="True"/>
             </Grid>
-
+               
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button Name="btnHighscores" Content="Button" Grid.Column="0" Background="#FFAFEC76" BorderBrush="{x:Null}"/>
+                <Button Name="btnHighscores" Content="Highscores" Grid.Column="0" Background="#FFAFEC76" BorderBrush="{x:Null}" Click="BtnHighscores_Click"/>
                 <Button Name="btnQuit" Content="Quit" Grid.Column="1" Click="BtnQuit_Click" Background="#FFF79898" BorderBrush="{x:Null}"/>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lblTopPlayer" Content="Top Player:" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="15"/>
+                <Label x:Name="lblHighestScore" Content="" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="15"/>
             </Grid>
 
             <Label Grid.Row="0" Content="FlappyVoice" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFFB8E58"/>
             <Button Name="btnPlay" Content="Play!" Grid.Row="2" Click="BtnPlay_Click" Background="#FFFFEA8B" BorderBrush="{x:Null}"/>
         </Grid>
-        <Label Content="Top Player: " HorizontalAlignment="Left" Margin="72,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" FontSize="15"/>
-        <Label x:Name="HighestScore" Content="score" Grid.Column="1" HorizontalAlignment="Left" Margin="162,34.333,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="15"/>
+
 
 
 

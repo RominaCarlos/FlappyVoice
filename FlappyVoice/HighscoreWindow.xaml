@@ -1,0 +1,28 @@
+﻿<Window x:Class="FlappyVoice.HighscoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyVoice"
+        mc:Ignorable="d"
+        Title="HighscoreWindow" Height="450" Width="450">
+    <Grid Name="highscores" Background="#FFB1F1FF" KeyDown="Highscores_KeyDown">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="rSpacing1" Height="1*"/>
+            <RowDefinition x:Name="rSpacing2" Height="5*"/>
+            <RowDefinition x:Name="rSpacing3" Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="cSpacing1" Width="*"/>
+            <ColumnDefinition x:Name="cSpacing2" Width="4*"/>
+            <ColumnDefinition x:Name="cSpacing3" Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="1" Content="Highscores" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="#FFFB8E58"></Label>
+
+        <TextBlock Name="txtbPlayerList" Grid.Row="1" Grid.Column="1" Foreground="#FFFB8E58"></TextBlock>
+
+        <Label Grid.Row="2" Grid.Column="1" Content="Press esc to return to main window" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Foreground="#FFFB8E58" ></Label>
+    </Grid>
+</Window>

@@ -1,1 +1,6 @@
-Josh;
+Josh;366;0
+Martin;99;0
+Jakob;370;0
+josh;0;0
+;36;0
+lol;0;0

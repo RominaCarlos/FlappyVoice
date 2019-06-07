@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace FlappyVoice
 {
-    class Player
+    static class Player
     {
+        static public string Name { get; set; }
+        static public double Score { get; set; }
+        static public double ClickCounter { get; set; }
     }
 }

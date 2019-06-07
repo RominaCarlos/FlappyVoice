@@ -55,11 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HighscoreWindow.xaml.cs">
+      <DependentUpon>HighscoreWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InfoList.cs" />
     <Compile Include="Obstacles.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="HighscoreWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
